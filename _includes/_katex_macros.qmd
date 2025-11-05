@@ -1,0 +1,27 @@
+
+::: {.hidden}
+
+<!-- Groundwork -->
+$$
+\gdef\sub#1{_{\mathrm{#1}}}
+\gdef\unit#1{\mathrm{#1}}
+$$
+<!-- Physical units -->
+$$
+\gdef\celsius{\unit{°C}}
+\gdef\joule{\unit{J}}
+\gdef\kelvin{\unit{K}}
+\gdef\kilogram{\unit{kg}}
+\gdef\mole{\unit{mol}}
+\gdef\pascal{\unit{Pa}}
+$$
+<!-- Combined physical units -->
+$$
+\gdef\joulepermole{\frac{\joule}{\mole}}
+\gdef\jouleperkilogram{\frac{\joule}{\kilogram}}
+\gdef\jouleperkelvin{\frac{\joule}{\kelvin}}
+\gdef\jouleperkelvinperkilogram{\frac{\joule}{\kelvin\,\kilogram}}
+\gdef\jouleperkelvinpermole{\frac{\joule}{\kelvin\,\mole}}
+$$
+
+:::

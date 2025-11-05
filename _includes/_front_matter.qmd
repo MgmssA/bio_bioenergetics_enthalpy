@@ -1,0 +1,19 @@
+---
+title: |
+    <p>![](_style/mgmss_brand_color.png){width=40px}</p>
+    Bioenergetik - Enthalpie
+subtitle: 'Chemische Energie<br><small>Lerninhalte</small>'
+date: 2025-10-17 
+date-modified: 2025-10-17
+author: Călin Aurel Drăgan
+abstract: 'Die Lebensenergie steckt in der Chemie unserer Nahrung. Sie kann erst durch chemische Reaktionen nutzbar gemacht werden. Die Energie, die daraus durch offene Systeme gewonnen werden kann, wird durch die Enthalpie beschrieben. In diesem Dokument lernst Du die für die Biologie wichtigsten Konzepte rund um die Enthalpie kennen.'
+# bibliography: references.bib  
+format: 
+    biodoc-html:
+        include-in-header: _includes/_in_header.html
+        # include-after-body: _includes/_after_body.html
+        embed-resources: false
+        self-contained-math: false
+filters:
+  - highlight-text
+---

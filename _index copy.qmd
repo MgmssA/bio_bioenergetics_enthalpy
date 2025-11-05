@@ -1,0 +1,371 @@
+{{< include _includes/_front_matter.qmd >}}
+{{< include _includes/_init_fontawesome.qmd >}} 
+{{< include _includes/_katex_macros.qmd >}} 
+
+::: {.callout-important collapse="true"}
+
+## Rückblick - Innere Enegie
+
+Wir haben im letzten Abschnitt die innere Energie $U$ kennengelernt. Diese agiert wie ein Puffer für Systemenergie und kann sowohl durch Wärme als auch Arbeit verändert werden. Das hatten wir so aufgeschrieben:
+
+$$ 
+\Delta U = Q + W.
+$$
+
+Wir hatten weiterhin festgestellt, dass die innere Energie $U$ eine Zustandsfunktion ist. Dadurch verhält sie sich ähnlich wie die potenzielle Energie. Der erste Hauptsatz der Thermodynamik besagt, dass in einem **isolierten System** die innere Energie konstant bleibt
+
+$$
+\Delta U = 0,
+$$ 
+
+da weder Wärme noch Energie mit dem System ausgetauscht werden können.
+
+In einem **geschlossenen System** herrscht ein konstantes Volumen $V$ und dadurch fällt die Expansionsarbeit $W = -p \Delta V$ weg, da $\Delta V = 0$. Dadurch kann eine Änderung der inneren Energie nur durch Abgabe oder Zugabe von Wärme erfolgen.
+
+$$
+\Delta U = Q.
+$$
+
+Diese Wärme lässt sich nun als Produkt $Q = C_V \Delta T$ aus Wärmekapazität bei konstantem Volumen $C_V$ und Temperaturveränderung $\Delta T$ schreiben.
+
+:::
+
+## Die Energie für den Alltagsgebrauch
+
+Nun steigen wir in die Thermodynamik ein, die für uns Lebewesen und für uns im alltäglichen Leben eine Rolle spielt. Zuerst stellen wir fest, dass wir und alle anderen Lebewesen offene Systeme sind. Offene Systeme können Masse, Arbeit, und Wärme mit ihrer Umgebung austauschen.
+
+Offene Systeme haben, im Gegensatz zu isolierten und geschlossenen Systemen, die Möglichkeit, sich auszudehnen. Dadurch bleibt der Druck $p$ konstant und steigt nicht an wie bei konstantem Volumen. Gleichzeitig bedeutet das, dass die Systeme grundsätzlich Expansionsarbeit leisten gegen den Druck ihrer Umgebung, wenn sie sich ausdehnen können. Es kann jedoch auch Expansionsarbeit in die Systeme gelangen, wenn diese mehr Gas verbrauchen und sie sich zusammenziehen. Die Nettodifferenz zwischen verbrauchten und entstandenen Gasen 
+
+$$
+\Delta V = V\sub{Enstanden} - V\sub{Verbraucht}
+$$
+
+arbeitet also immer gegen einen äußeren Druck durch die Arbeit
+
+$$ 
+W = -p \Delta V.
+$$
+
+Im Deinem Alltagsbereich ist es meistens der Atmosphärendruck, der die Größe der Arbeit bestimmt.
+
+### Definition der Enthalpie
+
+Wenn Wärme auf offene Systeme einwirkt, dann wird ein Teil dieser Energie zu Ausdehnung des Systems genutzt und nicht mehr in die innere Energie hinein gesteckt. Wir brauchen eine neue Form von Energie, die **Enthalpie** $H$, um diese Vorgänge bei **konstantem Druck** zu erfassen. Die Enthalpie ist so definiert
+
+$$
+H = U + pV.
+$$
+
+Hierbei ist $p$ der Druck und $V$ das Volumen des Systems. Das heißt, dass die Enthalpie diejenige Energie ist, die zwischen System und Umgebung bei **konstantem Druck** ausgetauscht wird. 
+
+Dabei ist es egal, was vor Dir passiert. Die Enthalpie kann auf viele Systeme offene Systeme angewendet werden. Es kann eine chemische Reaktion sein, die im Reagenzglas schnell abläuft oder langsam über mehrere Wochen in einem See. Es kann das Grillfeuer sein, dass in der Feuerstelle brennt, oder einen gesamten Wald in Spanien vernichtet. Es kann auch Du sein, wenn Du tanzt, Basketball oder Fussball spielst, oder Fahrrad fährst. Oder der Baum vor Deinem Fenster, der gerade Kohlendioxid in Zucker umwandelt.
+
+### Veränderung von Enthalpie
+
+Die Veränderung der Enthalpie kann allgemein so ausgedrückt werden
+
+$$
+\Delta H = \Delta U + \Delta\left( pV \right).
+$$ {#eq-enthalpy}
+
+Es ergibt sich aus der oberen Gleichung, dass bei **konstantem Druck**, die Enthalpieänderung der Änderung der Wärmeenergie entspricht. Das heisst, die Enthalpie kann nur durch Zugabe oder Abgabe von Wärme zwischen System und Umgebung verändert werden. 
+
+$$
+\Delta H = Q
+$$ {#eq-enthalpy-heat}
+
+::: {.callout-note title="Herleitung - Wie Wärme die Enthalpie beeinflusst" collapse="true"}
+Zuerst schreiben wir in @eq-enthalpy den Ausdruck $\Delta(pV)$ um. Du musst nicht wissen nach welchen Regeln das erfolgt, lediglich das Ergebnis ist wichtig.
+
+$$
+\Delta\left( pV \right) = \Delta p V + p \Delta V + \Delta p \Delta V
+$$
+
+Der letzte Ausdruck $\Delta p \Delta V$ ist das Produkt von zwei kleinen Veränderungen und ist dadurch selber sehr klein. Wir vernachlässigen den Ausdruck. Jetzt hauen wir die Definition der inneren Energie $\Delta U = Q + W$ auch noch in @eq-enthalpy rein und es ergibt sich
+
+$$
+\Delta H = Q + W + \Delta p V + p \Delta V.
+$$
+
+Nun nehmen wir an, dass unser System nichts anderes als Expansionsarbeit $W = -p V$ machen kann und arbeiten das ein
+
+$$
+\Delta H = Q + \left( -pV \right) + \Delta p V + p \Delta V.
+$$
+
+Nun sehen wir, dass sich die Volumenarbeit aufhebt. Zusätzlich setzen wir wie gesagt auch konstanten druck voraus, woraus sich $\Delta p = 0$ ergibt. Dadurch fällt auch der Ausdruck $V \Delta p$ weg und es bleibt übrig
+
+$$
+\Delta H = Q.
+$$
+:::
+
+So wie bei der inneren Energie, gibt es auch bei der Enthalpie keine absoluten Werte. Jede Veränderung der Enthalpie gilt immer nur zwischen zwei Zuständen: Anfang und Ende.
+
+### Das Lagerfeuer als offenes System
+
+Ein Lagerfeuer brennt in der Abenddämmerung als offenes System. Das Holz wird durch den Vorgang der Verbrennung in $\ce{CO2}$ und $\ce{H2O}$ umgewandelt.
+
+::: {#fig-force-push}
+
+![](_images/open_system_fire.jpg){width=60%}
+
+Ein Lagerfeuer brennt in der Abenddämmerung als offenes System. Das [Holz]{colour="brand-color.orange"} wird mithilfe von [Sauerstoff $\ce{O2}$]{colour="brand-color.red"} und dem Vorgang der Verbrennung in [Kohlendioxid $\ce{CO2}$]{colour="brand-color.red"}, [Wasser $\ce{H2O}$]{colour="brand-color.red", [Licht]{colour="brand-color.purple"} und [Wärme]{colour="brand-color.blue"} umgewandelt. Ein Teil der Masse wird in Form von [Restasche]{colour="brand-color.orange"} liegen bleiben oder als [Flugasche]{colour="brand-color.orange"} an die Umgebung verloren. Die [Wärme]{colour="brand-color.blue"} wird genutzt, um die Luft aus der Umgebung aufzuheizen. Foto von <a href="https://unsplash.com/@wrenaylameinberg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Wren Meinberg</a> auf <a href="https://unsplash.com/photos/bonfire-on-forest-xqV9QdGOSas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash.</a>
+      
+:::
+
+Die Verbrennung ist im Grunde genommen eine chemische Reaktion mit der Gleichung
+
+$$
+\ce{\mathrm{Holz} + O2 + ->[\mathrm{Verbrennung}] CO2 + H2O + \mathrm{Wärme} + \mathrm{Licht} + \mathrm{Asche}}
+$$
+
+und das Feuer selbst stellt das offene System dar. Wir stellen das offene System Feuer etwas schematischer dar.
+
+```{mermaid}
+%%| fig-height: 3
+flowchart LR
+    classDef icon shape:rounded,fill:#F4F4E7,stroke:#F4F4E7,font-size:28px;
+    classDef text fill:#00000000,stroke:#00000000;
+    classDef empty height:0,width:0;
+    classDef open stroke-width:0px;
+    classDef isolated stroke:#222222,stroke-width:10px;
+    style open rx:10px, ry:10px, fill:#E1E1D5, stroke:#E1E1D5; 
+
+    subgraph open [Lagerfeuer]
+        heatsys["$$Q$$"]:::text
+        worksys["$$W$$"]:::text
+        masssys["$$m$$"]:::text
+    end
+
+    heatin["$$Q_{\mathrm{kalte Luft}}$$"]:::text
+    heatin --> heatsys
+    heatout["$$Q_{\mathrm{warme Luft}}$$"]:::text
+    heatsys --> heatout
+
+    volin["$$-p_{\mathrm{atm}} \left( V_{\mathrm{kalte Luft}} + V_{\mathrm{O}_2} \right)$$"]:::text
+    volin --> worksys
+    volout["$$-p_{\mathrm{atm}} \left( V_{\mathrm{warme Luft}} + V_{\mathrm{CO}_2} + V_{\mathrm{H}_2\mathrm{O}} \right) - W_{\mathrm{Licht}}$$"]:::text
+    worksys --> volout
+
+    massin["$$m_{\mathrm{Holz}} + m_{\mathrm{O}_2}$$"]:::text
+    massin --> masssys
+    massout["$$m_{\mathrm{CO}_2} + m_{\mathrm{H}_2\mathrm{O}} + m_{\mathrm{Asche}}$$"]:::text
+    masssys --> massout
+```
+
+Jetzt können wir ein vorher/nachher Vergleich anstellen. In der Sprache der Thermodynamik vergleichen wir also den initialen Punkt mit dem finalen Punkt. Der initiale Punkt ist bevor das Feuer gezündet worden ist und der finale Punkt ist nachdem das Feuer aufhört, zu brennen.
+
+Schauen wir uns die Bilanz der Wärme an:
+
+$$
+\begin{split}
+Q &= Q\sub{f} - Q\sub{i} \\
+    &= Q\sub{warme Luft} - Q\sub{kalte Luft}
+\end{split}
+$$
+
+Für die Arbeit können wir schreiben
+
+$$
+\begin{split}
+W &= -p\sub{atm} \Delta V - W\sub{Licht}\\
+    &= -p\sub{atm} \left( V\sub{f} - V\sub{i} \right) - W\sub{Licht} \\
+    &= -p\sub{atm} \left[ 
+        \left( V\sub{warme Luft} + V_{\ce{CO2}} +  V_{\ce{H2O}} \right)
+        - \left( V\sub{kalte Luft} + V_{\ce{O2}} \right)
+    \right] - W\sub{Licht}.
+\end{split}
+$$
+
+Die Massenbilanz ist dementsprechend
+
+$$
+\begin{split}
+\Delta m &= \left( m\sub{f} - m\sub{i} \right) \\
+    &= \left[ 
+        \left( m_{\ce{CO2}} + m_{\ce{H2O}} + m\sub{Asche} \right)
+        - \left( m\sub{Holz} + m_{\ce{O2}} \right)
+    \right].
+\end{split}
+$$
+
+Die innere Energie $U$ des Holzes ist hierbei in die Energieformen Wärme und Licht umgewandelt worden; und das unter konstantem Atmosphärendruck $p\sub{atm}$. Dabei wird die Wärmeenergie auf Luft übertragen und dadurch an die Umgebung abgegeben. 
+
+Allerdings ist ein großer Anteil des Holzes zu Gasen geworden. Es ist eben diese Differenz im Volumen zwischen aufgenommenen und abgegeben Gasen, die die Umwandlung der inneren Energie beschränkt. Der Grund für die Beschränkung ist, dass die entstandenen Gase Expansionsarbeit gegen die Atmosphäre leisten.
+
+### Der Baum als offenes System
+
+Ein Baum wächst in der Savanne. Du glaubst beim ersetn Hinsehen, dass der Baujm kaum etwas tut. Doch in seinem Inneren brennen die Feuer und die Schmieden. Es laufen zwei Vorgänge gleichzeitig ab: auf der einen Seite baut der Baum durch Photosynthese Nahrung und Baustoffe auf. Auf der anderen Seite verbennt der Baum seine eigens geschaffene Nahrung, damit er Lebensenergie bekommt.
+
+::: {#fig-force-push}
+
+![](_images/open_system_tree.jpg){width=80%}
+
+Ein Baum wächst im Grasland der Savanne als offenes System. Die Masse, die aus der Umgebung einströmt besteht einerseits aus [Kohlendioxid $\ce{CO2}$]{colour="brand-color.red"}, [Sauerstoff $\ce{O2}$]{colour="brand-color.red"} und [Wasser $\ce{H2O}$]{colour="brand-color.red"}, und andereseits aus den [Salzen]{colour="brand-color.orange"} des Bodens. Abgegeben wird Masse ebenfalls in Form von [Kohlendioxid $\ce{CO2}$]{colour="brand-color.red"}, [Sauerstoff $\ce{O2}$]{colour="brand-color.red"} und [Wasser $\ce{H2O}$]{colour="brand-color.red"} im gasförmigen Zustand. Der Primäranteil der ankommenden Energie steckt in den [Photonen]{colour="brand-color.purple"} der Sonne. Einen Teil bekommt die Umgebung zurück in Form von [Wärmestrahlung]{colour="brand-color.purple"}. Den Großteil der Sonnenenergie wird in die Photosynthese gesteckt. Diese sorgt für Nahrung, dass durch Verbrennung Energie erzeugt. Diese Lebensenergie wird zum Wachstum der [Biomnasse]{colour="brand-color.green"} verwendet. Ein weiterer Teil dient der Verdunstung des [Wassers $\ce{H2O}$]{colour="brand-color.red"}. Schließlich verdrängt auch das Wachstum der Biomasse die Atmosphäre langsam und leistet Expansionsarbeit. Foto von <a href="https://unsplash.com/@niko_photos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">niko photos</a> auf <a href="https://unsplash.com/photos/green-leaf-tree-under-blue-sky-tGTVxeOr_Rs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      
+:::
+
+Der Baum betreibt auf der einen Seite die Photosynthese, mit dem Ziel Zucker $\ce{C6H12O6} herzustellen.
+
+$$
+\ce{CO2 + H2O + \mathrm{Licht} -->[\mathrm{Photosynthese}] C6H12O6 + O2}
+$$
+
+Dann wird der Zucker aber gleichzeitig, jedoch spätestens in der Nacht, verbrannt, damit der Baum Lebensenergie gewinnen kann. Diese Verbennung nennt sich Respiration.
+
+$$
+\ce{C6H12O6 + O2 + ->[\mathrm{Respiration}] CO2 + H2O + \mathrm{Energie} + \mathrm{Wärme}}
+$$
+
+und das Feuer selbst stellt das offene System dar. Wir stellen das offene System Feuer etwas schematischer dar.
+
+```{mermaid}
+%%| fig-height: 3
+flowchart LR
+    classDef icon shape:rounded,fill:#F4F4E7,stroke:#F4F4E7,font-size:28px;
+    classDef text fill:#00000000,stroke:#00000000;
+    classDef empty height:0,width:0;
+    classDef open stroke-width:0px;
+    classDef isolated stroke:#222222,stroke-width:10px;
+    style open rx:10px, ry:10px, fill:#E1E1D5, stroke:#E1E1D5; 
+
+    subgraph open [Lagerfeuer]
+        heatsys["$$Q$$"]:::text
+        worksys["$$W$$"]:::text
+        masssys["$$m$$"]:::text
+    end
+
+    heatin["$$Q_{\mathrm{kalte Luft}}$$"]:::text
+    heatin --> heatsys
+    heatout["$$Q_{\mathrm{warme Luft}}$$"]:::text
+    heatsys --> heatout
+
+    volin["$$-p_{\mathrm{atm}} \left( V_{\mathrm{kalte Luft}} + V_{\mathrm{O}_2} \right)$$"]:::text
+    volin --> worksys
+    volout["$$-p_{\mathrm{atm}} \left( V_{\mathrm{warme Luft}} + V_{\mathrm{CO}_2} + V_{\mathrm{H}_2\mathrm{O}} \right) - W_{\mathrm{Licht}}$$"]:::text
+    worksys --> volout
+
+    massin["$$m_{\mathrm{Holz}} + m_{\mathrm{O}_2}$$"]:::text
+    massin --> masssys
+    massout["$$m_{\mathrm{CO}_2} + m_{\mathrm{H}_2\mathrm{O}} + m_{\mathrm{Asche}}$$"]:::text
+    masssys --> massout
+```
+
+Jetzt können wir ein vorher/nachher Vergleich anstellen. In der Sprache der Thermodynamik vergleichen wir also den initialen Punkt mit dem finalen Punkt. Der initiale Punkt ist bevor das Feuer gezündet worden ist und der finale Punkt ist nachdem das Feuer aufhört, zu brennen.
+
+Schauen wir uns die Bilanz der Wärme an:
+
+$$
+\begin{split}
+Q &= Q\sub{f} - Q\sub{i} \\
+    &= Q\sub{kalte Luft} - Q\sub{warme Luft}
+\end{split}
+$$
+
+Für die Arbeit können wir schreiben
+
+$$
+\begin{split}
+W &= -p\sub{atm} \Delta V - W\sub{Licht}\\
+    &= -p\sub{atm} \left( V\sub{f} - V\sub{i} \right) - W\sub{Licht} \\
+    &= -p\sub{atm} \left[ 
+        \left( V\sub{warme Luft} + V_{\ce{CO2}} +  V_{\ce{H2O}} \right)
+        - \left( V\sub{kalte Luft} + V_{\ce{O2}} \right)
+    \right] - W\sub{Licht}.
+\end{split}
+$$
+
+Die Massenbilanz ist dementsprechend
+
+$$
+\begin{split}
+\Delta m &= \left( m\sub{f} - m\sub{i} \right) \\
+    &= \left[ 
+        \left( m_{\ce{CO2}} + m_{\ce{H2O}} + m\sub{Asche} \right)
+        - \left( m\sub{Holz} + m_{\ce{O2}} \right)
+    \right].
+\end{split}
+$$
+
+Die innere Energie $U$ des Holzes ist hierbei in die Energieformen Wärme und Licht umgewandelt worden; und das unter konstantem Atmosphärendruck $p\sub{atm}$. Dabei wird die Wärmeenergie auf Luft übertragen und dadurch an die Umgebung abgegeben. 
+
+Allerdings ist ein großer Anteil des Holzes zu Gasen geworden. Es ist eben diese Differenz im Volumen zwischen aufgenommenen und abgegeben Gasen, die die Umwandlung der inneren Energie beschränkt. Der Grund für die Beschränkung ist, dass die entstandenen Gase Expansionsarbeit gegen die Atmosphäre leisten.
+
+### Reaktionstypen bei konstantem Druck  
+
+Wenn sich die Enthalpie verändert, dann passiert das auf drei unterschiedliche Arten und Weisen:
+
+- $\Delta H < 0$: Das ist eine **exotherme Reaktion**. Und wie immer, wenn ein Minus auftaucht beziehen wir uns auf das System, dass Energie and die Umgebung verliert. Eine exotherme Reaktion gibt also Energie ab; in ihrer Umgebung wird es warm.
+
+- $\Delta H = 0$: ein eher seltener jedoch nicht unmöglicher Fall. Hierbei findet kein Austausch von Wärme zwischen Umgebung und System statt.
+
+- $\Delta H > 0$: Diese Reaktion ist eine **endotherme Reaktion**. Das Pluszeichen sagt uns, dass die Umgebung Wärme in das System eingibt. Das System gewinnt Wärme; deshalb positiv. In der Umgebung einer endothermen Reaktion wird es kalt.
+
+### Standardenthalpien
+
+Man hat eine unglaublich große Menge von Enthalpien gemessen und bestimmt. Die Standardenthalpien werden als $\Delta H^{\circ}$ geschrieben. Der kleine Kreis bezeichnet dabei die Tatsache, dass die Werte unter Standardbedingungen gewonnen worden sind. Viele Standardbedingungen umfassen eine Temperatur von $298\,\unit{K}$ oder $25\,\unit{°C}$ und einen Druck von $101325\,\unit{Pa}$; also normaler Atmosphärendruck auf Meereshöhe. 
+
+Standardenthalpien können ähnlich wie Wärmekapazitäten auf die Stoffmenge in Mol bezogen werden $\Delta H\sub{m}^{\circ}$ mit der Einheit $[\unit{J}\unit{K}^{-1}\unit{mol}^{-1}]$ oder auf Masse $\Delta H^{\circ}$ mit der Einheit $[\unit{J}\unit{K}^{-1}\unit{kg}^{-1}]$ 
+
+### Wärmekapazität
+
+Wenn die Enthalpieveränderung aufgrund der Wärmeübertragung stattfindet, dann spielt die Wärmekapazität bei der Erwärmung eine Rolle. Diese zeigt die gesamte Energie an, die für die Temperaturveränderung $\Delta T$ gebraucht wird. 
+
+$$
+Q = C_p \Delta T.
+$$
+
+Hierbei ist $C_p$ die Wärmekapazität bei konstantem Druck. Sie hat die Einheit Joule pro Kelvin $[\unit{J}\unit{K}^{-1}]$. Die Wärmekapazität setzt sich aus Stoffmenge $n$ in Mol $[\unit{mol}]$ und molarer Wärmekapazität $c_{p,\mathrm{m}}$ gegeben in $[\unit{J}\unit{K}^{-1}\unit{mol}^{-1}]$ zusammen:
+
+$$
+C_p = n c_{p,\mathrm{m}}.
+$$
+
+Die Arbeit mit Stoffmengen ist etwas wissenschaftlicher, da hier auf die grundsätzlichen Verhältnisse bei der Reaktion eingegangen wird. Die praktische Arbeit macht eher von der folgenden Form Gebrauch
+
+$$
+C_p = m c_p,
+$$
+
+die die Masse des Stoffes $m$ in $[\unit{kg}]$ und die spezifischer Wärmekapazität $c_p$ gegeben in $[\unit{J}\unit{K}^{-1}\unit{kg}^{-1}]$ berücksichtigt. In der Praxis ist es eben oft einfacher direkt mit Gewichten als mit der Molanzahl zu arbeiten.
+
+### Zustandsfunktion und Standardbedingungen
+
+Da die Enthalpie nur Veränderungen zwischen Anfang und Ende betrachtet, ist es sehr interessant, dass sie eine Zustandsfunktion ist. Dadurch verhält sie sich genau wie die potenzielle Energie. Es ist gleichgültig wie ich die Bergspitze erreiche. Ob ich die Seilbahn oder die sich nach oben windende Straße nehme macht keinen Unterschied. Die aufgewendete Energie ist die gleiche.
+
+Das führt uns zum **Hess'schen Gesetz**. Eine Enthalpieveränderung kann immer als Summe oder Subtraktion mehrerer Teilenthalpien dargestellt werden. Das ist ein mächtiges Werkzeug der Thermodynamik. Hier ein Beispiel: wenn Wasser schmilzt, können wir das so schreiben:
+
+$$
+\ce{H2O(s) -> H2O(l)},\;\Delta H\sub{fus,m}^{\circ} = +6\;\unit{kJ}\,\unit{mol}^{-1}.
+$$ {#eq-melt}
+
+Hier steht **(s)** für das englische *solid*, **(l)** für das englische *liquid*, und **fus** für das englische Wort *fusion*, was die Verschmelzung oder Erstarrung bezeichnet.
+
+$$
+\ce{H2O(l) -> H2O(g)},\;\Delta H\sub{vap,m}^{\circ} = +45\;\unit{kJ}\,\unit{mol}^{-1}
+$$ {#eq-vap}
+
+bei der **(g)** für Gas steht und **vap** für das englische Wort *vaporization* oder Verdampfung. Die Tatsache, dass die Enthalpie eine Zustandsfunktion ist, lässt uns auch die direkte Verdampfung von Eis, die sogenannte Sublimation, aus Schmelzen und Verdampfen berechnen. Diese gewinnen wir durch addieren von @eq-melt und @eq-vap
+
+$$
+\ce{H2O(s) + \xcancel{H2O(l)} -> \xcancel{H2O(l)} + H2O(g)},\;\Delta H\sub{sub,m}^{\circ} > 0
+$$
+
+$$
+\ce{H2O(s) -> H2O(g)},\;\Delta H\sub{sub,m}^{\circ} > 0
+$$
+
+mit der Enthalpie 
+
+$$
+\begin{split}
+\Delta H\sub{sub,m}^{\circ} 
+    &= \Delta H\sub{fus,m}^{\circ} + \Delta H\sub{vap,m}^{\circ} \\
+    &= 6\;\unit{kJ}\,\unit{mol}^{-1} + 45\;\unit{kJ}\,\unit{mol}^{-1} \\
+    &= 51\;\unit{kJ}\,\unit{mol}^{-1}. 
+\end{split}
+$$
+
+Das Schmelzen und Verdampfen des Wassers verbrauchen die Energie der Umgebung. Die Reaktionen sind **endotherm**. Da beide Einzelreaktionen endotherm sind, ist auch die Sublimation, die Summe aus beiden, ebenfalls endotherm.
+
