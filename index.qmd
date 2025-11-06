@@ -70,7 +70,7 @@ $$
 \Delta H = \Delta U + \Delta\left( pV \right).
 $$ {#eq-diff-enthalpy}
 
-So wie bei der inneren Energie, gibt es auch bei der Enthalpie keine absoluten Werte. Jede Veränderung der Enthalpie gilt immer nur zwischen zwei Zuständen: Anfang, **a**, und Ende, **e**. Na gut; wenn ein Teil der Wärmeenergie nicht mehr in die innere Energie hineingesteckt wird, wie unterscheiden sich Enthalpie und innere Energie? Der Unterschied sieht so aus:
+So wie bei der inneren Energie, gibt es auch bei der Enthalpie keine absoluten Werte. Jede Veränderung der Enthalpie gilt immer nur zwischen zwei Zuständen: Anfang und Ende. Na gut; wenn ein Teil der Wärmeenergie nicht mehr in die innere Energie hineingesteckt wird, wie unterscheiden sich Enthalpie und innere Energie? Der Unterschied sieht so aus:
 
 $$
 \Delta H - \Delta U = p \Delta V
