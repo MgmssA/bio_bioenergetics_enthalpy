@@ -2,6 +2,7 @@ project:
     type: default
     output-dir: docs
 
+lang: de
 toc: true
 toc-depth: 5
 toc-location: right
