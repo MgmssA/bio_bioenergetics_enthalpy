@@ -78,7 +78,7 @@ $$ {#eq-diff-hu}
 
 Wie es dazu kommt kannst Du in der Herleitung nachlesen, wenn Du magst. Überlege es Dir aber gut, bevor der Schock kommt. Die Herleitung ist kein Lerninhalt, der abgefragt wird.
 
-::: {.callout-note title="Herleitung - Wie Wärme die Enthalpie beeinflusst<br><small>[Hey! Klapp das hier nicht auf, wenn Du geistig gesund bleiben willst.]{fg='ivory-shade-4'}</small>" collapse="true"}
+::: {.callout-note title="Herleitung - Der Unterschied zur inneren Energie<br><small>[Hey! Klapp das hier nicht auf, wenn Du geistig gesund bleiben willst.]{fg='ivory-shade-4'}</small>" collapse="true"}
 
 Ok, Du wurdest gewarnt. 
 
@@ -127,7 +127,7 @@ $$ {#eq-enthalpy-heat}
 
 Wie das jetzt zustande kommt, siehst Du in der Herleitung. Diese ist kein Lerninhalt, sondern dient der Schockstarre, wegen dem Buchstabensalat. Trau Dich also!
 
-::: {.callout-note title="Herleitung - Der Unterschied zwischen Enthalpie und innerer Energie<br><small>[Nicht schon wieder Buchstaben! Das ist die zweite Warnung. Klapp das bloß nicht auf!]{fg='ivory-shade-4'}</small>" collapse="true"}
+::: {.callout-note title="Herleitung - Die Größe der Enthalpie<br><small>[Nicht schon wieder Buchstaben! Das ist die zweite Warnung. Klapp das bloß nicht auf!]{fg='ivory-shade-4'}</small>" collapse="true"}
 
 Du scheinst nicht für Warnungen, zugänglich zu sein. Also, zieh Dir das rein.
 
@@ -172,7 +172,7 @@ Kommen wir zurück zum wesentlichen. Das Vorzeichen der Enthalpieänderung zeigt
 
 - $\Delta H = 0$: ein eher seltener jedoch nicht unmöglicher Fall. Hierbei findet kein Austausch von Wärme zwischen Umgebung und System statt.
 
-- $\Delta H > 0$: Wenn die Enthalpieänderung größer als Null ist, dann handelt es sich um eine **endotherme Reaktion**. Das Pluszeichen sagt uns, dass die Umgebung Wärme an das System abgibt. In der Umgebung einer endothermen Reaktion wird es kalt.
+- $\Delta H > 0$: Wenn die Enthalpieänderung größer als Null ist, dann handelt es sich um eine **endotherme Reaktion**. Das Pluszeichen sagt uns, dass das System Energie dazu gewinnt. Das passiert, weil die Umgebung Wärme an das System abgibt. In der Umgebung einer endothermen Reaktion wird es kalt.
 
 ## Praktische Seiten der Enthalpie
 
