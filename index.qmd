@@ -85,7 +85,7 @@ Ok, Du wurdest gewarnt.
 Zuerst schreiben wir in @eq-enthalpy den Ausdruck $\Delta(pV)$ um. Dabei behandeln wir es wie alle anderen Delta Größen
 
 $$
-\Delta \left( pV \right) = p\sub{Ende} V\sub{Ende} - p\sub{Anfang} V\sub{Anfang}.
+\Delta \left( pV \right) = \left( pV \right)\sub{Ende} - \left( pV \right)\sub{Anfang} = p\sub{Ende} V\sub{Ende} - p\sub{Anfang} V\sub{Anfang}.
 $$
 
 Jetzt setzen wir konstanten Druck $p$ voraus und dadurch wissen wir, dass $p\sub{Anfang} = p\sub{Ende}$ ist. Somit können wir den Umgebungsdruck $p$ statt Anfangs- und Enddruck verwenden und schreiben

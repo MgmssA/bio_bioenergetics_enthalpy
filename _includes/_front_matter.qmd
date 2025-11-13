@@ -1,6 +1,6 @@
 ---
 title: |
-    <p>![](_style/mgmss_brand_color.png){width=40px}</p>
+    <p>![](style/mgmss_symbol_color.png){width=40px}</p>
     Bioenergetik - Enthalpie
 subtitle: 'Chemische Energie<br><small>Lerninhalte</small>'
 date: 2025-10-17 
